@@ -14,7 +14,7 @@ public class conexionSQL {
         Connection conexion = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            conexion = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/bdcomputadoras", "root", "diana");
+            conexion = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/bdcomputadoras", "", "");
 
         } catch (Exception e) {
             System.err.print("Error: " + e);
